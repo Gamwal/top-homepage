@@ -1,38 +1,38 @@
 [
   {
-    "projectName": "Project One",
-    "projectDescription": "Short description of the project. Just a couple sentences will do",
-    "projectLink": "#######",
-    "projectImageSrc": "#######"
+    "name": "Project One",
+    "description": "Short description of the project. Just a couple sentences will do",
+    "link": "#######",
+    "imageSrc": "#######"
   },
   {
-    "projectName": "Project Two",
-    "projectDescription": "Short description of the project. Just a couple sentences will do",
-    "projectLink": "#######",
-    "projectImageSrc": "#######"
+    "name": "Project Two",
+    "description": "Short description of the project. Just a couple sentences will do",
+    "link": "#######",
+    "imageSrc": "#######"
   },
   {
-    "projectName": "Project Three",
-    "projectDescription": "Short description of the project. Just a couple sentences will do",
-    "projectLink": "#######",
-    "projectImageSrc": "#######"
+    "name": "Project Three",
+    "description": "Short description of the project. Just a couple sentences will do",
+    "link": "#######",
+    "imageSrc": "#######"
   },
   {
-    "projectName": "Project Four",
-    "projectDescription": "Short description of the project. Just a couple sentences will do",
-    "projectLink": "#######",
-    "projectImageSrc": "#######"
+    "name": "Project Four",
+    "description": "Short description of the project. Just a couple sentences will do",
+    "link": "#######",
+    "imageSrc": "#######"
   },
   {
-    "projectName": "Project Five",
-    "projectDescription": "Short description of the project. Just a couple sentences will do",
-    "projectLink": "#######",
-    "projectImageSrc": "#######"
+    "name": "Project Five",
+    "description": "Short description of the project. Just a couple sentences will do",
+    "link": "#######",
+    "imageSrc": "#######"
   },
   {
-    "projectName": "Project Six",
-    "projectDescription": "Short description of the project. Just a couple sentences will do",
-    "projectLink": "#######",
-    "projectImageSrc": "#######"
+    "name": "Project Six",
+    "description": "Short description of the project. Just a couple sentences will do",
+    "link": "#######",
+    "imageSrc": "#######"
   }
 ]
