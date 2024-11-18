@@ -3,36 +3,36 @@
     "name": "Project One",
     "description": "Short description of the project. Just a couple sentences will do",
     "link": "#######",
-    "imageSrc": "#######"
+    "imageSrc": "../images/placeholder.png"
   },
   {
     "name": "Project Two",
     "description": "Short description of the project. Just a couple sentences will do",
     "link": "#######",
-    "imageSrc": "#######"
+    "imageSrc": "../images/placeholder.png"
   },
   {
     "name": "Project Three",
     "description": "Short description of the project. Just a couple sentences will do",
     "link": "#######",
-    "imageSrc": "#######"
+    "imageSrc": "../images/placeholder.png"
   },
   {
     "name": "Project Four",
     "description": "Short description of the project. Just a couple sentences will do",
     "link": "#######",
-    "imageSrc": "#######"
+    "imageSrc": "../images/placeholder.png"
   },
   {
     "name": "Project Five",
     "description": "Short description of the project. Just a couple sentences will do",
     "link": "#######",
-    "imageSrc": "#######"
+    "imageSrc": "../images/placeholder.png"
   },
   {
     "name": "Project Six",
     "description": "Short description of the project. Just a couple sentences will do",
     "link": "#######",
-    "imageSrc": "#######"
+    "imageSrc": "../images/placeholder.png"
   }
 ]
