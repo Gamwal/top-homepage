@@ -6,7 +6,7 @@ module.exports = {
   entry: "./src/script.js",
   devServer: {
     static: {
-      directory: path.join(__dirname, "src"),
+      directory: path.join(__dirname, "dist"),
     },
     hot: true,
     open: true,
@@ -23,8 +23,18 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "asset/inline",
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "images/[name][ext]",
+        },
+      },
+      {
+        test: /\.(svg|ico)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "icons/[name][ext]",
+        },
       },
       {
         test: /\.(?:js|mjs|cjs)$/,
@@ -42,7 +52,6 @@ module.exports = {
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
-    assetModuleFilename: "icons/",
     clean: true,
   },
 };

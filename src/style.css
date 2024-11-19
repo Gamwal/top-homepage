@@ -1,18 +1,18 @@
 :root {
   --main-color: rgb(2, 152, 190);
-  font-size: 16px;
+  font-size: 14px;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   max-width: 900px;
   margin: auto;
@@ -20,7 +20,6 @@ body {
 }
 
 .footer {
-  /* max-width: 900px; */
   background-color: var(--main-color);
   color: white;
   display: flex;
@@ -53,14 +52,15 @@ body {
   width: 1rem;
 }
 
-.telephone,
-.email {
+.telephone {
   display: flex;
   gap: 0.5rem;
 }
 
-.title {
-  font-size: 1.5rem;
+.email a {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 main {
@@ -74,31 +74,7 @@ main {
   background-color: var(--main-color);
   background: linear-gradient(170deg, var(--main-color) 70%, white 20%);
   padding: 1.5rem 3rem;
-  display: flex;
   position: relative;
-  align-items: center;
-}
-
-.header img {
-  max-width: 350px;
-}
-
-.about-section-content {
-  max-width: 500px;
-  background-color: white;
-  padding: 1.5rem 2rem;
-  padding-left: 1rem;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  height: fit-content;
-}
-
-.about-section-content div:last-child {
-  align-self: flex-end;
-  display: flex;
-  gap: 0.5rem;
 }
 
 .projects-section {
@@ -107,6 +83,10 @@ main {
   max-width: 900px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
 }
 
 .project {
@@ -136,16 +116,51 @@ main {
   height: 200px;
 }
 
-.image-holder {
-  position: relative;
-}
-
 .portfolio-owner {
   font-size: 3.2rem;
   position: absolute;
   bottom: 8px;
-  left: 19px;
+  left: 21px;
   color: white;
+}
+
+.image-holder {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.image-holder img {
+  max-width: 350px;
+  float: left;
+}
+
+.image-holder div {
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 1rem 1rem;
+  line-height: 3.5ch;
+}
+
+.image-holder div p:first-child {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.image-holder div p:nth-child(2) {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.image-holder div p:last-child {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: end;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 900px) {
@@ -154,28 +169,44 @@ main {
   }
 
   .header {
-    padding-top: 8rem;
-    justify-content: center;
-    background: linear-gradient(170deg, var(--main-color) 58%, white 20%);
+    padding: 7rem 4rem;
+    padding-bottom: 0;
+    background: linear-gradient(170deg, var(--main-color) 48%, white 20%);
   }
 
   .image-holder {
-    position: absolute;
-    /* display: none; */
-    bottom: 180px;
-    left: 30px;
+    display: block;
+  }
+
+  .image-holder img {
+    max-width: 300px;
+    float: left;
+    margin: -80px 15px 0 -40px;
+  }
+
+  .image-holder div {
+    padding: 2rem 1rem;
+  }
+
+  .image-holder div p:first-child {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .image-holder div p:nth-child(2) {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .image-holder div p:last-child {
+    text-align: end;
   }
 
   .portfolio-owner {
     position: absolute;
-    top: 25px;
-    left: 300px;
-    width: 350px;
-  }
-
-  .about-section-content {
-    width: 500px;
-    height: 400px;
+    top: -70px;
+    left: 200px;
+    width: 312px;
   }
 
   .content-section-about {
@@ -192,37 +223,26 @@ main {
   }
 
   .image-holder {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  .image-holder div {
+    box-shadow: none;
   }
 
   .image-holder img {
     max-width: 90vw;
+    min-width: 350px;
+    margin: 0px 0px 0px 0px;
   }
 
   .portfolio-owner {
     position: absolute;
-    bottom: 8px;
-    left: 19px;
-    top: auto;
-    max-width: 85vw;
-  }
-
-  .about-section-content {
-    padding: 1rem 1rem;
-    width: 100vw;
-    box-shadow: none;
-    height: fit-content;
-  }
-
-  .about-section-content div:last-child {
-    align-self: center;
-  }
-
-  .image-holder img {
-    min-width: 300px;
+    top: 280px;
+    left: auto;
   }
 
   main {
